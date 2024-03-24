@@ -55,6 +55,7 @@
       font-family: "Open Sans", sans-serif;
       color: #226E93;
       font-weight: normal;
+      text-align: left;
       
     }
 
@@ -65,6 +66,7 @@
       font-weight: normal;
       color: #226E93;
       margin-bottom: 0;
+      text-align: left;
     }
 
     p {
@@ -75,10 +77,11 @@
     }
 
     ul {
-      margin-left: 20px;
+      /* margin-left: 0px; */
       margin-bottom: 15px;
       font-family: "Open Sans", sans-serif;
       font-size: 1.1rem; /* Slightly enlarge the font size */
+      text-align: left;
     }
 
     li {
@@ -88,6 +91,7 @@
     a {
       color: #226E93;
       text-decoration: underline;
+      /* text-align: left; */
     }
 
     a:hover {
@@ -107,14 +111,14 @@
       text-align: center;
     }
     .overlay {
-      position: absolute;
-      top: 50%;
+      position: absolute; 
+      top: 50%;   /* for small use 50 for big use 40 */ 
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-size: 1.05em; /* Adjust size as needed */
-      width: 95%;
-      padding: 20px;
+      font-size: 1.1em; /* Adjust size as needed  for big use 2 small use 1.05*/
+      width: 95%;  /* for small use 95 for big use 55*/
+      padding: 10px;
       box-sizing: border-box;
       text-align: left;
     }
@@ -141,6 +145,14 @@
           <source media="(max-width: 768px)" srcset="icl_8.png">
           <img src="icl_7.png" alt="描述性文字">
         </picture>
+
+        <!-- <div class="background">
+          <div class="overlay">
+            Special Session on "Generative AI for Media Generation" | IEEE MLSP 2024
+            <br> September 22-25, 2024
+            <br> London, UK
+          </div>
+        </div> -->
         
 <!-- 
         <img src="/Users/yuanyi/Desktop/papers/MLSP-webside/icl_7.png" >
@@ -197,11 +209,14 @@
 
 
     <h3 id="organising-team">Organising team</h3>
-    <a href="https://liuxubo717.github.io">Xubo Liu, University of Surrey, UK</a><br>
-    <a href="https://haoheliu.github.io">Haohe Liu, University of Surrey, UK</a><br>
-    <a href="https://www.surrey.ac.uk/people/yi-yuan">Yi Yuan, University of Surrey, UK</a><br>
-    <a href="https://www.surrey.ac.uk/people/zhenhua-feng">Zhenhua Feng, University of Surrey, UK</a><br>
-    <a href="https://personalpages.surrey.ac.uk/w.wang/">Wenwu Wang, University of Surrey, UK</a><br>
+    <div style = "text-align: left;">
+      <a href="https://liuxubo717.github.io">Xubo Liu, University of Surrey, UK</a><br>
+      <a href="https://haoheliu.github.io">Haohe Liu, University of Surrey, UK</a><br>
+      <a href="https://www.surrey.ac.uk/people/yi-yuan">Yi Yuan, University of Surrey, UK</a><br>
+      <a href="https://www.surrey.ac.uk/people/zhenhua-feng">Zhenhua Feng, University of Surrey, UK</a><br>
+      <a href="https://personalpages.surrey.ac.uk/w.wang/">Wenwu Wang, University of Surrey, UK</a><br>
+    </div>
+
 
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js
