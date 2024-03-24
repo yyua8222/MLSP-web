@@ -98,8 +98,9 @@
       width: 100%;
       height: 50vh;
       background-image: url('icl_6.png');
-      background-size: cover;
+      background-size: contain;
       background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -107,12 +108,12 @@
     }
     .overlay {
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-size: 2em; /* Adjust size as needed */
-      width: 55%;
+      font-size: 1.05em; /* Adjust size as needed */
+      width: 95%;
       padding: 20px;
       box-sizing: border-box;
       text-align: left;
@@ -136,15 +137,15 @@
 <body>
     <header>
         <img src="mlsp_full.png" alt="ICASSP Logo">
-        <div class="background">
-          <div class="overlay">
-            Generative AI for Media Generation | IEEE MLSP 2024 Special Session
-            <br> September 22-25, 2024
-            <br> London, UK
-          </div>
-        </div>
-    </header>
-
+        <picture>
+          <source media="(max-width: 768px)" srcset="icl_8.png">
+          <img src="icl_7.png" alt="描述性文字">
+        </picture>
+        
+<!-- 
+        <img src="/Users/yuanyi/Desktop/papers/MLSP-webside/icl_7.png" >
+    </header> -->
+  
   <div class="container-lg">
     <h2>Scope and Topics of Interest</h2>
     <!-- <h2>Special Session at <a href="https://2024.ieeeicassp.org/">ICASSP 2024</a></h2> -->
